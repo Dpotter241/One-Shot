@@ -37,17 +37,17 @@ const LandingPage = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-  
+
     const selectedTime = event.target.timeSelect.value;
     const selectedGenre = event.target.genreSelect.value;
     const selectedSubgenre = event.target.subgenreSelect.value;
     const selectedCharacterId = parseInt(event.target.characterSelect.value);
     const selectedPlot = event.target.plotSelect.value;
-  
+
     const selectedCharacter = characterOptions.find(
-      (character) => character.id === selectedCharacterId
+      (char) => char.id === selectedCharacterId
     );
-  
+
     if (selectedCharacter) {
       setAdventureDetails({
         time: selectedTime,
@@ -57,12 +57,10 @@ const LandingPage = () => {
         plot: selectedPlot,
         characterDescription: selectedCharacter.characterdescription,
       });
+
       setShowModal(true);
-    } else {
-      alert('Please select a valid character!');
     }
   };
-  
 
   const closeModal = () => {
     setShowModal(false);
@@ -113,16 +111,17 @@ const LandingPage = () => {
       </form>
 
       {showModal && (
-        <div className="modal">
-          <div className="modal-content">
-            <span className="close" onClick={closeModal}>&times;</span>
-            <h2>Your Adventure Details</h2>
-            <p>Your adventure will take place in {adventureDetails.time}.</p>
-            <p>It is a {adventureDetails.genre} theme with elements of {adventureDetails.subgenre}.</p>
-            <p>The plot of your adventure will be "{adventureDetails.plot}".</p>
-            <p>The party will be aided or hampered by {adventureDetails.character}.</p>
-            <p>Character Description: {adventureDetails.characterDescription}</p>
-            <p>Good adventuring hero!</p>
+        <div className="modal-backdrop" onClick={closeModal}>
+          <div className="modal">
+            <div className="modal-content">
+              <span className="close" onClick={closeModal}>&times;</span>
+              <h2>Your Adventure Details</h2>
+              <p>Your adventure will take place in a {adventureDetails.time} setting!</p>
+              <p>It is a {adventureDetails.genre} theme with elements of {adventureDetails.subgenre}!</p>
+              <p>The plot of your adventure will be "{adventureDetails.plot}".</p>
+              <p>The party will be aided or hampered by {adventureDetails.character} who is {adventureDetails.characterDescription}.</p>
+              <p>Happy adventuring hero!</p>
+            </div>
           </div>
         </div>
       )}
