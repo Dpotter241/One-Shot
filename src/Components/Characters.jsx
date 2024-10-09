@@ -1,22 +1,19 @@
-// src/Components/Characters.jsx
 import React, { useState } from 'react';
-import NavBar from '../Website/Navbar'; // Ensure the import path is correct
-import './Characters.css'; // You may want to create a separate CSS file for styling
+import NavBar from '../Website/Navbar';
+import './Characters.css';
 
 const Characters = ({ userId }) => {
-  // State for the input values
+
   const [characterName, setCharacterName] = useState('');
   const [characterDescription, setCharacterDescription] = useState('');
 
-  // Function to handle the API post request
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    // Create the character object, including the userId of the logged-in user
     const characterData = {
       charactername: characterName,
       characterdescription: characterDescription,
-      userId, // This will be the userId of the logged-in user
+      userId,
     };
 
     try {
@@ -25,14 +22,13 @@ const Characters = ({ userId }) => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(characterData), // Send character data
+        body: JSON.stringify(characterData),
       });
 
       if (!response.ok) {
         throw new Error('Error submitting character');
       }
 
-      // Reset form fields after successful submission
       setCharacterName('');
       setCharacterDescription('');
 
@@ -45,10 +41,9 @@ const Characters = ({ userId }) => {
 
   return (
     <div className="characters-container">
-      <NavBar /> {/* Add the NavBar component here */}
+      <NavBar />
       <h2>Add a New Character</h2>
       <form onSubmit={handleSubmit}>
-        {/* Character Name Input */}
         <div>
           <label htmlFor="characterName">Character Name:</label>
           <input
@@ -59,8 +54,6 @@ const Characters = ({ userId }) => {
             required
           />
         </div>
-
-        {/* Character Description Input */}
         <div>
           <label htmlFor="characterDescription">Character Description:</label>
           <textarea

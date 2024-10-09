@@ -1,54 +1,46 @@
-/* App.css */
-
-/* General reset for margin and padding */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Ensures the entire app container is centered */
 .app-container {
   display: flex;
-  flex-direction: column; /* Navbar at the top, content below */
+  flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* Start content from the top */
-  height: 100vh; /* Full viewport height */
+  justify-content: flex-start;
+  min-height: 100vh;
   width: 100%;
   margin: 0 auto;
 }
 
-/* Body or container styles */
 body, html {
-  height: 100%; /* Ensures the body takes up the full height */
+  height: 100%;
   font-family: Arial, sans-serif;
 }
 
-/* Optional styling for the login container */
 .auth-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh; /* Centers login box vertically */
-  width: 100%; /* Ensures full width */
-  background-color: #f4f4f4; /* Light background for the page */
+  justify-content: flex-start;
+  width: 100%;
+  background-color: #f4f4f4;
+  padding: 20px;
 }
 
-/* Form styling for login page */
 .auth-container form {
   background-color: white;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 300px; /* Restricts the login form to a reasonable width */
+  width: 300px;
 }
 
-/* For general page content when logged in */
 .page-content {
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
 }

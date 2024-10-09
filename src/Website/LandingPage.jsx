@@ -1,26 +1,24 @@
-// src/Website/LandingPage.jsx
 import React, { useEffect, useState } from 'react';
-import NavBar from './Navbar.jsx'; // Include NavBar here
-import './LandingPage.css'; // Import the CSS file
+import NavBar from './Navbar.jsx';
+import './LandingPage.css';
 
 const LandingPage = () => {
   const [timeOptions, setTimeOptions] = useState([]);
   const [genreOptions, setGenreOptions] = useState([]);
   const [subgenreOptions, setSubgenreOptions] = useState([]);
   const [characterOptions, setCharacterOptions] = useState([]);
-  const [archetypeOptions, setArchetypeOptions] = useState([]);
   const [plotOptions, setPlotOptions] = useState([]);
+  const [showModal, setShowModal] = useState(false);
+  const [adventureDetails, setAdventureDetails] = useState({});
 
   useEffect(() => {
-    // Fetch options for the selects from your API endpoints
     const fetchData = async () => {
       try {
-        const [timeData, genreData, subgenreData, characterData, archetypeData, plotData] = await Promise.all([
+        const [timeData, genreData, subgenreData, characterData, plotData] = await Promise.all([
           fetch('http://localhost:8088/time').then(res => res.json()),
           fetch('http://localhost:8088/genre').then(res => res.json()),
           fetch('http://localhost:8088/subgenre').then(res => res.json()),
           fetch('http://localhost:8088/characters').then(res => res.json()),
-          fetch('http://localhost:8088/archetype').then(res => res.json()),
           fetch('http://localhost:8088/plots').then(res => res.json()),
         ]);
 
@@ -28,7 +26,6 @@ const LandingPage = () => {
         setGenreOptions(genreData);
         setSubgenreOptions(subgenreData);
         setCharacterOptions(characterData);
-        setArchetypeOptions(archetypeData);
         setPlotOptions(plotData);
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -38,26 +35,32 @@ const LandingPage = () => {
     fetchData();
   }, []);
 
-  // Handle form submission
   const handleSubmit = (event) => {
-    event.preventDefault(); // Prevent default form submission behavior
+    event.preventDefault();
 
-    // Get selected values
     const selectedTime = event.target.timeSelect.value;
     const selectedGenre = event.target.genreSelect.value;
     const selectedSubgenre = event.target.subgenreSelect.value;
-    const selectedCharacter = event.target.characterSelect.value;
-    const selectedArchetype = event.target.archetypeSelect.value;
+    const selectedCharacterId = parseInt(event.target.characterSelect.value);
     const selectedPlot = event.target.plotSelect.value;
 
-    // Display selected information in a popup (alert)
-    alert(`Character Created!\n
-      Time: ${selectedTime}\n
-      Genre: ${selectedGenre}\n
-      Subgenre: ${selectedSubgenre}\n
-      Character: ${selectedCharacter}\n
-      Archetype: ${selectedArchetype}\n
-      Plot: ${selectedPlot}`);
+    const selectedCharacter = characterOptions.find(option => option.id === selectedCharacterId);
+
+    if (selectedCharacter) {
+      setAdventureDetails({
+        time: selectedTime,
+        genre: selectedGenre,
+        subgenre: selectedSubgenre,
+        character: selectedCharacter.charactername,
+        plot: selectedPlot,
+        characterDescription: selectedCharacter.characterdescription
+      });
+    }
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
   };
 
   return (
@@ -65,7 +68,7 @@ const LandingPage = () => {
       <NavBar />
       <h1>It's Adventure Time!</h1>
 
-      <form id="characterForm" onSubmit={handleSubmit}> {/* Add onSubmit handler */}
+      <form id="characterForm" onSubmit={handleSubmit}>
         <label htmlFor="timeSelect">Choose Time:</label>
         <select id="timeSelect">
           {timeOptions.map(option => (
@@ -90,14 +93,7 @@ const LandingPage = () => {
         <label htmlFor="characterSelect">Choose Character:</label>
         <select id="characterSelect">
           {characterOptions.map(option => (
-            <option key={option.id} value={option.charactername}>{option.charactername}</option>
-          ))}
-        </select>
-
-        <label htmlFor="archetypeSelect">Choose Archetype:</label>
-        <select id="archetypeSelect">
-          {archetypeOptions.map(option => (
-            <option key={option.id} value={option.Villain}>{option.Villain}</option> // Adjust as needed
+            <option key={option.id} value={option.id}>{option.charactername}</option> {/* Use ID as value */}
           ))}
         </select>
 
@@ -110,6 +106,21 @@ const LandingPage = () => {
 
         <button type="submit">Create Adventure</button>
       </form>
+
+      {showModal && (
+        <div className="modal">
+          <div className="modal-content">
+            <span className="close" onClick={closeModal}>&times;</span>
+            <h2>Your Adventure Details</h2>
+            <p>Your adventure will take place in {adventureDetails.time}.</p>
+            <p>It is a {adventureDetails.genre} theme with elements of {adventureDetails.subgenre}.</p>
+            <p>The plot of your adventure will be "{adventureDetails.plot}".</p>
+            <p>The party will be aided or hampered by {adventureDetails.character}.</p>
+            <p>Character Description: {adventureDetails.characterDescription}</p>
+            <p>Good adventuring hero!</p>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

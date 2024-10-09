@@ -1,54 +1,47 @@
-/* Center the theme page content */
 .theme-container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center horizontally */
-    justify-content: center; /* Center vertically */
-    min-height: 100vh; /* Full height of the viewport */
-    background-color: #f0f0f0; /* Light background color */
+    align-items: center; 
+    justify-content: center; 
+    min-height: 100vh; 
+    background-color: #f0f0f0; 
 }
 
-/* Heading styles */
 h2 {
-    font-size: 2.5rem; /* Adjust font size */
-    margin-bottom: 20px; /* Space below the heading */
+    font-size: 2.5rem; 
+    margin-bottom: 20px;
 }
 
-/* Form styles */
 form {
     display: flex;
-    flex-direction: column; /* Stack form elements vertically */
-    width: 300px; /* Fixed width for form */
+    flex-direction: column;
+    width: 300px;
 }
 
-/* Label styles */
 label {
-    margin-bottom: 5px; /* Space below labels */
-    font-weight: bold; /* Bold labels */
+    margin-bottom: 5px; 
+    font-weight: bold;
 }
 
-/* Input styles */
 input {
-    padding: 10px; /* Padding inside inputs */
-    margin-bottom: 15px; /* Space below inputs */
-    border: 1px solid #ccc; /* Border around inputs */
-    border-radius: 4px; /* Rounded corners */
-    font-size: 1rem; /* Font size */
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 1rem; 
 }
 
-/* Button styles */
 button {
-    padding: 10px; /* Padding inside button */
-    background-color: #007bff; /* Button color */
-    color: white; /* Text color */
-    border: none; /* Remove border */
-    border-radius: 4px; /* Rounded corners */
-    font-size: 1rem; /* Font size */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s; /* Smooth transition */
+    padding: 10px; 
+    background-color: #007bff; 
+    color: white; 
+    border: none;
+    border-radius: 4px; 
+    font-size: 1rem; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
 }
 
-/* Button hover effect */
 button:hover {
-    background-color: #0056b3; /* Darker shade on hover */
+    background-color: #0056b3; 
 }

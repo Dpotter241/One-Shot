@@ -1,39 +1,34 @@
 {
   "users": [
     {
-      "id": 1,
+      "userId": 1,
       "name": "Jacob Stanley",
       "email": "Stantheman@gmail.com",
       "password": "MynamesStan1"
     },
     {
-      "id": 2,
+      "userId": 2,
       "name": "Sarah Johnson",
       "email": "sarahj12@gmail.com",
       "password": "Sarah2024!"
     },
     {
-      "id": 3,
+      "userId": 3,
       "name": "Michael Green",
       "email": "mgreen42@gmail.com",
       "password": "MikeG$123"
     },
     {
-      "id": 4,
+      "userId": 4,
       "name": "Emily White",
       "email": "emily_w@gmail.com",
       "password": "Emwht456!"
     },
     {
-      "id": 5,
+      "userId": 5,
       "name": "David Brown",
       "email": "dbrown@example.com",
       "password": "Dbrown789*"
-    },
-    {
-      "email": "dbrown@example.com",
-      "password": "Dbrown789*",
-      "id": 6
     }
   ],
   "time": [

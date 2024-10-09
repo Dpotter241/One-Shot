@@ -1,14 +1,13 @@
-// src/Website/Navbar.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css'; // Optional: If you want to style the Navbar
+import './Navbar.css';
 
 const Navbar = () => {
   return (
     <nav>
       <ul className="navbar">
         <li>
-          <Link to="/landing">Main</Link> {/* Link to the landing page */}
+          <Link to="/landing">Main</Link>
         </li>
         <li>
           <Link to="/theme">Theme</Link>

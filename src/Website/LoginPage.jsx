@@ -1,8 +1,7 @@
-// src/SignUpLoginPage.jsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const LoginPage = ({ setIsLoggedIn, setUserId }) => { // Add setUserId as a prop
+const LoginPage = ({ setIsLoggedIn, setUserId }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [isSignUp, setIsSignUp] = useState(false);
@@ -12,7 +11,6 @@ const LoginPage = ({ setIsLoggedIn, setUserId }) => { // Add setUserId as a prop
     event.preventDefault();
 
     try {
-      // Fetch users from the API
       const response = await fetch('http://localhost:8088/users');
 
       if (!response.ok) {
@@ -21,14 +19,11 @@ const LoginPage = ({ setIsLoggedIn, setUserId }) => { // Add setUserId as a prop
 
       const users = await response.json();
 
-      // Find a user that matches the provided email and password
       const user = users.find((user) => user.email === email && user.password === password);
 
       if (!user) {
         throw new Error('Invalid credentials');
       }
-
-      // Set the user ID in the app's state
       setUserId(user.id);
       setIsLoggedIn(true);
       navigate('/landing');

@@ -16,7 +16,6 @@ function MainPage() {
         </nav>
       </header>
       <main>
-        {/* Outlet will render the component for the selected route */}
         <Outlet />
       </main>
     </div>
