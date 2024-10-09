@@ -1,0 +1,25 @@
+/* App.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically */
+  flex-direction: column; /* Stacks children vertically */
+  background-color: #f8f8f8; /* Optional: Change the background color */
+}
+
+.app-container {
+  width: 100%; /* Full width for the container */
+  max-width: 800px; /* Set a maximum width for the app */
+  padding: 20px; /* Optional: Add some padding */
+  background-color: white; /* Optional: Background color for the container */
+  border-radius: 8px; /* Optional: Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
+}
+
+.navbar {
+  width: 100%; /* Make sure the navbar is full width */
+}

@@ -1,0 +1,40 @@
+/* Navbar.css */
+
+nav {
+    background-color: white; /* White background */
+    padding: 10px 20px; /* Padding around the navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures the navbar stays on top */
+}
+
+.navbar {
+    list-style-type: none; /* Removes bullet points from list items */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Flexbox to arrange items horizontally */
+    justify-content: center; /* Centers the navigation items */
+}
+
+.navbar li {
+    margin-right: 20px; /* Space between the navigation links */
+}
+
+.navbar li:last-child {
+    margin-right: 0; /* Removes right margin from the last link */
+}
+
+.navbar a {
+    text-decoration: none; /* Removes the underline from links */
+    color: #333; /* Dark gray color for the text */
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.navbar a:hover {
+    background-color: #f0f0f0; /* Light gray background on hover */
+}
