@@ -85,11 +85,6 @@
     {
       "time": "Test",
       "id": 11
-    },
-    {
-      "time": "test",
-      "userId": null,
-      "id": 12
     }
   ],
   "genre": [
@@ -136,11 +131,6 @@
     {
       "genre": "test",
       "id": 11
-    },
-    {
-      "genre": "test",
-      "userId": null,
-      "id": 12
     }
   ],
   "subgenre": [
@@ -187,11 +177,6 @@
     {
       "subGenre": "test",
       "id": 11
-    },
-    {
-      "subGenre": "test",
-      "userId": null,
-      "id": 12
     }
   ],
   "characters": [
@@ -254,24 +239,6 @@
       "charactername": "Viraeth Emberheart",
       "characterdescription": "A fire-wielding tiefling warlock with a devilish grin and a dark pact with an ancient being",
       "userId": 5
-    },
-    {
-      "charactername": "Test testington",
-      "characterdescription": "This character is a test who likes testing",
-      "id": 11
-    },
-    {
-      "charactername": "tester 2",
-      "characterdescription": "Second test",
-      "userId": 4,
-      "id": 12
-    }
-  ],
-  "archetype": [
-    {
-      "id": 1,
-      "Villain": "Villain",
-      "Hero": "Hero"
     }
   ],
   "plots": [

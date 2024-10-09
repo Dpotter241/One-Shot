@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import NavBar from '../Website/Navbar'; 
+import NavBar from '../Website/NavBar'; 
 import './Plots.css'; 
 
 const Plots = ({ userId }) => {

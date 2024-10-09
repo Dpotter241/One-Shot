@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import NavBar from './Navbar.jsx';
+import NavBar from './NavBar.jsx';
 import './LandingPage.css';
 
 const LandingPage = () => {
@@ -37,15 +37,17 @@ const LandingPage = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
+  
     const selectedTime = event.target.timeSelect.value;
     const selectedGenre = event.target.genreSelect.value;
     const selectedSubgenre = event.target.subgenreSelect.value;
     const selectedCharacterId = parseInt(event.target.characterSelect.value);
     const selectedPlot = event.target.plotSelect.value;
-
-    const selectedCharacter = characterOptions.find(option => option.id === selectedCharacterId);
-
+  
+    const selectedCharacter = characterOptions.find(
+      (character) => character.id === selectedCharacterId
+    );
+  
     if (selectedCharacter) {
       setAdventureDetails({
         time: selectedTime,
@@ -53,11 +55,14 @@ const LandingPage = () => {
         subgenre: selectedSubgenre,
         character: selectedCharacter.charactername,
         plot: selectedPlot,
-        characterDescription: selectedCharacter.characterdescription
+        characterDescription: selectedCharacter.characterdescription,
       });
+      setShowModal(true);
+    } else {
+      alert('Please select a valid character!');
     }
-    setShowModal(true);
   };
+  
 
   const closeModal = () => {
     setShowModal(false);
@@ -93,7 +98,7 @@ const LandingPage = () => {
         <label htmlFor="characterSelect">Choose Character:</label>
         <select id="characterSelect">
           {characterOptions.map(option => (
-            <option key={option.id} value={option.id}>{option.charactername}</option> {/* Use ID as value */}
+            <option key={option.id} value={option.id}>{option.charactername}</option>
           ))}
         </select>
 

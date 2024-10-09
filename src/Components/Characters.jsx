@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import NavBar from '../Website/Navbar';
+import NavBar from '../Website/NavBar'; 
 import './Characters.css';
 
 const Characters = ({ userId }) => {
