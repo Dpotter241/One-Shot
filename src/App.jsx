@@ -6,12 +6,13 @@ import LandingPage from './Website/LandingPage.jsx';
 import Characters from './Components/Characters.jsx';
 import MySubmissions from './Components/MySubmissions.jsx';
 import Plots from './Components/Plots.jsx';
-import Themes from './Components/Themes.jsx';
+import Theme from './Components/Theme.jsx'; // Update import path if necessary
 import './App.css'; // Importing the App.css for styling
 
 function App() {
-  // State to manage login status
+  // State to manage login status and user ID
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [userId, setUserId] = useState(null); // State for userId
 
   return (
     <Router>
@@ -19,15 +20,13 @@ function App() {
         <Routes>
           <Route
             path="/"
-            element={<LoginPage setIsLoggedIn={setIsLoggedIn} />}
+            element={<LoginPage setIsLoggedIn={setIsLoggedIn} setUserId={setUserId} />} // Assuming LoginPage can set userId
           />
-          {/* Only show LandingPage if logged in */}
           {isLoggedIn && <Route path="/landing" element={<LandingPage />} />}
-          {isLoggedIn && <Route path="/characters" element={<Characters />} />}
+          {isLoggedIn && <Route path="/characters" element={<Characters userId={userId} />} />} {/* Pass userId to Characters */}
           {isLoggedIn && <Route path="/mysubmissions" element={<MySubmissions />} />}
           {isLoggedIn && <Route path="/plots" element={<Plots />} />}
-          {isLoggedIn && <Route path="/themes" element={<Themes />} />}
-          {/* Optionally, redirect to login if not authenticated */}
+          {isLoggedIn && <Route path="/theme" element={<Theme userId={userId} />} />} {/* Pass userId to Theme */}
           {!isLoggedIn && <Route path="*" element={<LoginPage setIsLoggedIn={setIsLoggedIn} />} />}
         </Routes>
       </div>

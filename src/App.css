@@ -1,25 +1,54 @@
 /* App.css */
 
-body, html {
+/* General reset for margin and padding */
+* {
   margin: 0;
   padding: 0;
-  height: 100%;
-  display: flex;
-  justify-content: center; /* Centers the content horizontally */
-  align-items: center; /* Centers the content vertically */
-  flex-direction: column; /* Stacks children vertically */
-  background-color: #f8f8f8; /* Optional: Change the background color */
+  box-sizing: border-box;
 }
 
+/* Ensures the entire app container is centered */
 .app-container {
-  width: 100%; /* Full width for the container */
-  max-width: 800px; /* Set a maximum width for the app */
-  padding: 20px; /* Optional: Add some padding */
-  background-color: white; /* Optional: Background color for the container */
-  border-radius: 8px; /* Optional: Rounded corners */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
+  display: flex;
+  flex-direction: column; /* Navbar at the top, content below */
+  align-items: center;
+  justify-content: flex-start; /* Start content from the top */
+  height: 100vh; /* Full viewport height */
+  width: 100%;
+  margin: 0 auto;
 }
 
-.navbar {
-  width: 100%; /* Make sure the navbar is full width */
+/* Body or container styles */
+body, html {
+  height: 100%; /* Ensures the body takes up the full height */
+  font-family: Arial, sans-serif;
+}
+
+/* Optional styling for the login container */
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Centers login box vertically */
+  width: 100%; /* Ensures full width */
+  background-color: #f4f4f4; /* Light background for the page */
+}
+
+/* Form styling for login page */
+.auth-container form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Restricts the login form to a reasonable width */
+}
+
+/* For general page content when logged in */
+.page-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
 }

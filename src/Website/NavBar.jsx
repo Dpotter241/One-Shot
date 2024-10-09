@@ -11,7 +11,7 @@ const Navbar = () => {
           <Link to="/landing">Main</Link> {/* Link to the landing page */}
         </li>
         <li>
-          <Link to="/themes">Themes</Link>
+          <Link to="/theme">Theme</Link>
         </li>
         <li>
           <Link to="/characters">Characters</Link>

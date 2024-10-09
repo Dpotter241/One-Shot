@@ -1,292 +1,334 @@
 {
-    "users": [
-          {
-            "id": 1,
-            "name": "Jacob Stanley",
-            "email": "Stantheman@gmail.com",
-            "password": "MynamesStan1"
-          }, 
-        {
-            "id": 2,
-            "name": "Sarah Johnson",
-            "email": "sarahj12@gmail.com",
-            "password": "Sarah2024!"
-        },
-        {
-            "id": 3,
-            "name": "Michael Green",
-            "email": "mgreen42@gmail.com",
-            "password": "MikeG$123"
-        },
-        {
-            "id": 4,
-            "name": "Emily White",
-            "email": "emily_w@gmail.com",
-            "password": "Emwht456!"
-        },
-        {
-            "id": 5,
-            "name": "David Brown",
-            "email": "dbrown@example.com",
-            "password": "Dbrown789*"
-        }
-    ],  
-    "time": [
-        {
-          "id": 1,
-          "time": "Futuristic",
-          "userId": 1
-        },
-        {
-          "id": 2,
-          "time": "Adventure",
-          "userId": 2
-        },
-        {
-          "id": 3,
-          "time": "Medieval",
-          "userId": 3
-        },
-        {
-          "id": 4,
-          "time": "Renaissance",
-          "userId": 1
-        },
-        {
-          "id": 5,
-          "time": "Post-Apocalyptic",
-          "userId": 4
-        },
-        {
-          "id": 6,
-          "time": "Steampunk",
-          "userId": 5
-        },
-        {
-          "id": 7,
-          "time": "Prehistoric",
-          "userId": 2
-        },
-        {
-          "id": 8,
-          "time": "Victorian",
-          "userId": 3
-        },
-        {
-          "id": 9,
-          "time": "Mythological",
-          "userId": 4
-        },
-        {
-          "id": 10,
-          "time": "Dark Ages",
-          "userId": 5
-        }
-    ],
-    "genre": [
-        {
-          "id": 1,
-          "genre": "Fantasy"
-        },
-        {
-          "id": 2,
-          "genre": "Horror"
-        },
-        {
-          "id": 3,
-          "genre": "Sci-Fi"
-        },
-        {
-          "id": 4,
-          "genre": "Mystery"
-        },
-        {
-          "id": 5,
-          "genre": "Western"
-        },
-        {
-          "id": 6,
-          "genre": "Adventure"
-        },
-        {
-          "id": 7,
-          "genre": "Political"
-        },
-        {
-          "id": 8,
-          "genre": "Historical"
-        },
-        {
-          "id": 9,
-          "genre": "Comedy"
-        },
-        {
-          "id": 10,
-          "genre": "Romance"
-        }
-    ],
-    "subgenre": [
-        {
-          "id": 1,
-          "subgenre": "Adventure"
-        },
-        {
-          "id": 2,
-          "subgenre": "Dark Fantasy"
-        },
-        {
-          "id": 3,
-          "subgenre": "High Fantasy"
-        },
-        {
-          "id": 4,
-          "subgenre": "Gothic Horror"
-        },
-        {
-          "id": 5,
-          "subgenre": "Space Opera"
-        },
-        {
-          "id": 6,
-          "subgenre": "Noir"
-        },
-        {
-          "id": 7,
-          "subgenre": "Cyberpunk"
-        },
-        {
-          "id": 8,
-          "subgenre": "Sword and Sorcery"
-        },
-        {
-          "id": 9,
-          "subgenre": "Stealth"
-        },
-        {
-          "id": 10,
-          "subgenre": "Heroic"
-        }
-    ],
-    "characters": [
-        {
-          "id": 1,
-          "charactername": "Frank Stavos",
-          "characterdescription": "A rough scoundrel with a black mustache and pistols strapped across his chest",
-          "userId": 1
-        },
-        {
-          "id": 2,
-          "charactername": "Lirael Moonshadow",
-          "characterdescription": "An elven sorceress with silver hair, wielding powerful magic passed down from her ancestors",
-          "userId": 2
-        },
-        {
-          "id": 3,
-          "charactername": "Gorim Ironfist",
-          "characterdescription": "A stout dwarf warrior with a heavy hammer and a deep-seated hatred for goblins",
-          "userId": 3
-        },
-        {
-          "id": 4,
-          "charactername": "Seraphis the Black",
-          "characterdescription": "A shadowy assassin clad in dark robes, known for his silent, deadly strikes",
-          "userId": 4
-        },
-        {
-          "id": 5,
-          "charactername": "Alara Windrider",
-          "characterdescription": "A human ranger skilled in archery and survival, with a keen connection to nature",
-          "userId": 5
-        },
-        {
-          "id": 6,
-          "charactername": "Kaelin Stormborn",
-          "characterdescription": "A tempest cleric with control over the winds and thunder, bearing a storm-touched trident",
-          "userId": 1
-        },
-        {
-          "id": 7,
-          "charactername": "Tharnok Bonecrusher",
-          "characterdescription": "A towering orc barbarian with a reputation for smashing his enemies with brute strength",
-          "userId": 2
-        },
-        {
-          "id": 8,
-          "charactername": "Mira Silvertongue",
-          "characterdescription": "A charismatic bard with a silver flute, known for weaving spells into her performances",
-          "userId": 3
-        },
-        {
-          "id": 9,
-          "charactername": "Elandor Nightfall",
-          "characterdescription": "A rogue who thrives in the shadows, with a penchant for lockpicking and avoiding detection",
-          "userId": 4
-        },
-        {
-          "id": 10,
-          "charactername": "Viraeth Emberheart",
-          "characterdescription": "A fire-wielding tiefling warlock with a devilish grin and a dark pact with an ancient being",
-          "userId": 5
-        }
-    ]
-    ,
-    "archetype": [
-        {
-          "id": 1,
-          "Villain": "Villain",
-          "Hero": "Hero"
-        }
-    ],
-    "plots": [
-        {
-          "id": 1,
-          "plot": "A cruel king has decided that he should have full control of the mining colony. The players need to get to the deepest depths of the mine to find the heart of the mountain before the king can!",
-          "userId": 1
-        },
-        {
-          "id": 2,
-          "plot": "A powerful artifact has resurfaced, and a secretive cult seeks to use it to bring an ancient evil back into the world. The players must stop the cult before it's too late.",
-          "userId": 2
-        },
-        {
-          "id": 3,
-          "plot": "The kingdom is on the brink of war, and only a lost heir to the throne can unite the people. The players must embark on a journey to find the heir, lost in a dangerous and forgotten land.",
-          "userId": 3
-        },
-        {
-          "id": 4,
-          "plot": "A mysterious plague is sweeping across the land, turning people into undead. The players must find the source of the disease and put an end to it before the entire kingdom falls.",
-          "userId": 4
-        },
-        {
-          "id": 5,
-          "plot": "A powerful dragon has awoken from its centuries-long slumber and is terrorizing nearby villages. The players must find a way to stop the dragon or convince it to return to its lair.",
-          "userId": 5
-        },
-        {
-          "id": 6,
-          "plot": "The players discover a hidden realm where time moves differently. They must navigate its strange landscapes and creatures to find a way back to their world before they are lost forever.",
-          "userId": 1
-        },
-        {
-          "id": 7,
-          "plot": "A forgotten city, long buried under desert sands, has been uncovered. The players must explore its ruins and face the ancient traps and guardians protecting its untold treasures.",
-          "userId": 2
-        },
-        {
-          "id": 8,
-          "plot": "A ruthless pirate lord has taken control of the seas, sinking all who oppose him. The players must gather allies and resources to bring an end to his reign of terror.",
-          "userId": 3
-        },
-        {
-          "id": 9,
-          "plot": "A powerful wizard has created a magical labyrinth, filled with traps and monsters, to hide a forbidden spell. The players must navigate the labyrinth and prevent the spell from falling into the wrong hands.",
-          "userId": 4
-        },
-        {
-          "id": 10,
-          "plot": "The stars are aligning for the first time in a millennium, and a long-lost prophecy foretells a world-changing event. The players must decide whether to embrace or prevent the prophecy from coming true.",
-          "userId": 5
-        }
-    ]
-        }
+  "users": [
+    {
+      "id": 1,
+      "name": "Jacob Stanley",
+      "email": "Stantheman@gmail.com",
+      "password": "MynamesStan1"
+    },
+    {
+      "id": 2,
+      "name": "Sarah Johnson",
+      "email": "sarahj12@gmail.com",
+      "password": "Sarah2024!"
+    },
+    {
+      "id": 3,
+      "name": "Michael Green",
+      "email": "mgreen42@gmail.com",
+      "password": "MikeG$123"
+    },
+    {
+      "id": 4,
+      "name": "Emily White",
+      "email": "emily_w@gmail.com",
+      "password": "Emwht456!"
+    },
+    {
+      "id": 5,
+      "name": "David Brown",
+      "email": "dbrown@example.com",
+      "password": "Dbrown789*"
+    },
+    {
+      "email": "dbrown@example.com",
+      "password": "Dbrown789*",
+      "id": 6
+    }
+  ],
+  "time": [
+    {
+      "id": 1,
+      "time": "Futuristic",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "time": "Adventure",
+      "userId": 2
+    },
+    {
+      "id": 3,
+      "time": "Medieval",
+      "userId": 3
+    },
+    {
+      "id": 4,
+      "time": "Renaissance",
+      "userId": 1
+    },
+    {
+      "id": 5,
+      "time": "Post-Apocalyptic",
+      "userId": 4
+    },
+    {
+      "id": 6,
+      "time": "Steampunk",
+      "userId": 5
+    },
+    {
+      "id": 7,
+      "time": "Prehistoric",
+      "userId": 2
+    },
+    {
+      "id": 8,
+      "time": "Victorian",
+      "userId": 3
+    },
+    {
+      "id": 9,
+      "time": "Mythological",
+      "userId": 4
+    },
+    {
+      "id": 10,
+      "time": "Dark Ages",
+      "userId": 5
+    },
+    {
+      "time": "Test",
+      "id": 11
+    },
+    {
+      "time": "test",
+      "userId": null,
+      "id": 12
+    }
+  ],
+  "genre": [
+    {
+      "id": 1,
+      "genre": "Fantasy"
+    },
+    {
+      "id": 2,
+      "genre": "Horror"
+    },
+    {
+      "id": 3,
+      "genre": "Sci-Fi"
+    },
+    {
+      "id": 4,
+      "genre": "Mystery"
+    },
+    {
+      "id": 5,
+      "genre": "Western"
+    },
+    {
+      "id": 6,
+      "genre": "Adventure"
+    },
+    {
+      "id": 7,
+      "genre": "Political"
+    },
+    {
+      "id": 8,
+      "genre": "Historical"
+    },
+    {
+      "id": 9,
+      "genre": "Comedy"
+    },
+    {
+      "id": 10,
+      "genre": "Romance"
+    },
+    {
+      "genre": "test",
+      "id": 11
+    },
+    {
+      "genre": "test",
+      "userId": null,
+      "id": 12
+    }
+  ],
+  "subgenre": [
+    {
+      "id": 1,
+      "subgenre": "Adventure"
+    },
+    {
+      "id": 2,
+      "subgenre": "Dark Fantasy"
+    },
+    {
+      "id": 3,
+      "subgenre": "High Fantasy"
+    },
+    {
+      "id": 4,
+      "subgenre": "Gothic Horror"
+    },
+    {
+      "id": 5,
+      "subgenre": "Space Opera"
+    },
+    {
+      "id": 6,
+      "subgenre": "Noir"
+    },
+    {
+      "id": 7,
+      "subgenre": "Cyberpunk"
+    },
+    {
+      "id": 8,
+      "subgenre": "Sword and Sorcery"
+    },
+    {
+      "id": 9,
+      "subgenre": "Stealth"
+    },
+    {
+      "id": 10,
+      "subgenre": "Heroic"
+    },
+    {
+      "subGenre": "test",
+      "id": 11
+    },
+    {
+      "subGenre": "test",
+      "userId": null,
+      "id": 12
+    }
+  ],
+  "characters": [
+    {
+      "id": 1,
+      "charactername": "Frank Stavos",
+      "characterdescription": "A rough scoundrel with a black mustache and pistols strapped across his chest",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "charactername": "Lirael Moonshadow",
+      "characterdescription": "An elven sorceress with silver hair, wielding powerful magic passed down from her ancestors",
+      "userId": 2
+    },
+    {
+      "id": 3,
+      "charactername": "Gorim Ironfist",
+      "characterdescription": "A stout dwarf warrior with a heavy hammer and a deep-seated hatred for goblins",
+      "userId": 3
+    },
+    {
+      "id": 4,
+      "charactername": "Seraphis the Black",
+      "characterdescription": "A shadowy assassin clad in dark robes, known for his silent, deadly strikes",
+      "userId": 4
+    },
+    {
+      "id": 5,
+      "charactername": "Alara Windrider",
+      "characterdescription": "A human ranger skilled in archery and survival, with a keen connection to nature",
+      "userId": 5
+    },
+    {
+      "id": 6,
+      "charactername": "Kaelin Stormborn",
+      "characterdescription": "A tempest cleric with control over the winds and thunder, bearing a storm-touched trident",
+      "userId": 1
+    },
+    {
+      "id": 7,
+      "charactername": "Tharnok Bonecrusher",
+      "characterdescription": "A towering orc barbarian with a reputation for smashing his enemies with brute strength",
+      "userId": 2
+    },
+    {
+      "id": 8,
+      "charactername": "Mira Silvertongue",
+      "characterdescription": "A charismatic bard with a silver flute, known for weaving spells into her performances",
+      "userId": 3
+    },
+    {
+      "id": 9,
+      "charactername": "Elandor Nightfall",
+      "characterdescription": "A rogue who thrives in the shadows, with a penchant for lockpicking and avoiding detection",
+      "userId": 4
+    },
+    {
+      "id": 10,
+      "charactername": "Viraeth Emberheart",
+      "characterdescription": "A fire-wielding tiefling warlock with a devilish grin and a dark pact with an ancient being",
+      "userId": 5
+    },
+    {
+      "charactername": "Test testington",
+      "characterdescription": "This character is a test who likes testing",
+      "id": 11
+    },
+    {
+      "charactername": "tester 2",
+      "characterdescription": "Second test",
+      "userId": 4,
+      "id": 12
+    }
+  ],
+  "archetype": [
+    {
+      "id": 1,
+      "Villain": "Villain",
+      "Hero": "Hero"
+    }
+  ],
+  "plots": [
+    {
+      "id": 1,
+      "plot": "A cruel king has decided that he should have full control of the mining colony. The players need to get to the deepest depths of the mine to find the heart of the mountain before the king can!",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "plot": "A powerful artifact has resurfaced, and a secretive cult seeks to use it to bring an ancient evil back into the world. The players must stop the cult before it's too late.",
+      "userId": 2
+    },
+    {
+      "id": 3,
+      "plot": "The kingdom is on the brink of war, and only a lost heir to the throne can unite the people. The players must embark on a journey to find the heir, lost in a dangerous and forgotten land.",
+      "userId": 3
+    },
+    {
+      "id": 4,
+      "plot": "A mysterious plague is sweeping across the land, turning people into undead. The players must find the source of the disease and put an end to it before the entire kingdom falls.",
+      "userId": 4
+    },
+    {
+      "id": 5,
+      "plot": "A powerful dragon has awoken from its centuries-long slumber and is terrorizing nearby villages. The players must find a way to stop the dragon or convince it to return to its lair.",
+      "userId": 5
+    },
+    {
+      "id": 6,
+      "plot": "The players discover a hidden realm where time moves differently. They must navigate its strange landscapes and creatures to find a way back to their world before they are lost forever.",
+      "userId": 1
+    },
+    {
+      "id": 7,
+      "plot": "A forgotten city, long buried under desert sands, has been uncovered. The players must explore its ruins and face the ancient traps and guardians protecting its untold treasures.",
+      "userId": 2
+    },
+    {
+      "id": 8,
+      "plot": "A ruthless pirate lord has taken control of the seas, sinking all who oppose him. The players must gather allies and resources to bring an end to his reign of terror.",
+      "userId": 3
+    },
+    {
+      "id": 9,
+      "plot": "A powerful wizard has created a magical labyrinth, filled with traps and monsters, to hide a forbidden spell. The players must navigate the labyrinth and prevent the spell from falling into the wrong hands.",
+      "userId": 4
+    },
+    {
+      "id": 10,
+      "plot": "The stars are aligning for the first time in a millennium, and a long-lost prophecy foretells a world-changing event. The players must decide whether to embrace or prevent the prophecy from coming true.",
+      "userId": 5
+    }
+  ]
+}
