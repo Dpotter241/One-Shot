@@ -5,7 +5,16 @@
     align-items: center;
     height: 100vh;
     padding-top: 20px;
-  }
+}
+
+.content-box {
+    background-color: white; /* White background for the box */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 90%; /* Width can be adjusted as needed */
+    max-width: 600px; /* Maximum width for larger screens */
+}
 
 h2 {
     font-size: 2.5rem; 
@@ -15,7 +24,7 @@ h2 {
 form {
     display: flex;
     flex-direction: column;
-    width: 300px; 
+    width: 100%; /* Full width within the content box */
 }
 
 label {

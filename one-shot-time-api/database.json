@@ -1,34 +1,35 @@
 {
   "users": [
     {
-      "userId": 1,
+      "id": 1,
       "name": "Jacob Stanley",
       "email": "Stantheman@gmail.com",
       "password": "MynamesStan1"
     },
     {
-      "userId": 2,
-      "name": "Sarah Johnson",
-      "email": "sarahj12@gmail.com",
-      "password": "Sarah2024!"
+      "name": "test",
+      "email": "test@test.com",
+      "password": "test",
+      "userId": 8,
+      "id": 2
     },
     {
-      "userId": 3,
-      "name": "Michael Green",
-      "email": "mgreen42@gmail.com",
-      "password": "MikeG$123"
+      "name": "Dustin Potter",
+      "email": "Dustin@gmail.com",
+      "password": "testtest1",
+      "id": 3
     },
     {
-      "userId": 4,
-      "name": "Emily White",
-      "email": "emily_w@gmail.com",
-      "password": "Emwht456!"
+      "name": "Dustin Potter",
+      "email": "Dustin@gmail.com",
+      "password": "testewrfasdf",
+      "id": 4
     },
     {
-      "userId": 5,
-      "name": "David Brown",
-      "email": "dbrown@example.com",
-      "password": "Dbrown789*"
+      "name": "Dustin Potter",
+      "email": "Dustin@gmail.com",
+      "password": "testewrfasdf",
+      "id": 5
     }
   ],
   "time": [
@@ -90,93 +91,115 @@
   "genre": [
     {
       "id": 1,
-      "genre": "Fantasy"
+      "genre": "Fantasy",
+      "userId": 1
     },
     {
       "id": 2,
-      "genre": "Horror"
+      "genre": "Horror",
+      "userId": 2
     },
     {
       "id": 3,
-      "genre": "Sci-Fi"
+      "genre": "Sci-Fi",
+      "userId": 3
     },
     {
       "id": 4,
-      "genre": "Mystery"
+      "genre": "Mystery",
+      "userId": 4
     },
     {
       "id": 5,
-      "genre": "Western"
+      "genre": "Western",
+      "userId": 5
     },
     {
       "id": 6,
-      "genre": "Adventure"
+      "genre": "Adventure",
+      "userId": 1
     },
     {
       "id": 7,
-      "genre": "Political"
+      "genre": "Political",
+      "userId": 2
     },
     {
       "id": 8,
-      "genre": "Historical"
+      "genre": "Historical",
+      "userId": 3
     },
     {
       "id": 9,
-      "genre": "Comedy"
+      "genre": "Comedy",
+      "userId": 4
     },
     {
       "id": 10,
-      "genre": "Romance"
+      "genre": "Romance",
+      "userId": 5
     },
     {
+      "id": 11,
       "genre": "test",
-      "id": 11
+      "userId": 1
     }
   ],
   "subgenre": [
     {
       "id": 1,
-      "subgenre": "Adventure"
+      "subgenre": "Adventure",
+      "userId": 1
     },
     {
       "id": 2,
-      "subgenre": "Dark Fantasy"
+      "subgenre": "Dark Fantasy",
+      "userId": 2
     },
     {
       "id": 3,
-      "subgenre": "High Fantasy"
+      "subgenre": "High Fantasy",
+      "userId": 3
     },
     {
       "id": 4,
-      "subgenre": "Gothic Horror"
+      "subgenre": "Gothic Horror",
+      "userId": 4
     },
     {
       "id": 5,
-      "subgenre": "Space Opera"
+      "subgenre": "Space Opera",
+      "userId": 5
     },
     {
       "id": 6,
-      "subgenre": "Noir"
+      "subgenre": "Noir",
+      "userId": 1
     },
     {
       "id": 7,
-      "subgenre": "Cyberpunk"
+      "subgenre": "Cyberpunk",
+      "userId": 2
     },
     {
       "id": 8,
-      "subgenre": "Sword and Sorcery"
+      "subgenre": "Sword and Sorcery",
+      "userId": 3
     },
     {
       "id": 9,
-      "subgenre": "Stealth"
+      "subgenre": "Stealth",
+      "userId": 4
     },
     {
       "id": 10,
-      "subgenre": "Heroic"
+      "subgenre": "Heroic",
+      "userId": 5
     },
     {
+      "id": 11,
       "subGenre": "test",
-      "id": 11
+      "userId": 1
     }
   ],
   "characters": [

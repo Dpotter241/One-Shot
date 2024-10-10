@@ -2,34 +2,57 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const LoginPage = ({ setIsLoggedIn, setUserId }) => {
+  const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [isSignUp, setIsSignUp] = useState(false);
   const navigate = useNavigate();
 
+  const postResponse = (newUser) => {
+    return fetch('http://localhost:8088/users', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(newUser),
+    });
+  };
+
+  const fetchUsers = async () => {
+    const response = await fetch('http://localhost:8088/users');
+    if (!response.ok) {
+      throw new Error('Failed to fetch users');
+    }
+    return await response.json();
+  };
+
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    try {
-      const response = await fetch('http://localhost:8088/users');
-
-      if (!response.ok) {
-        throw new Error('Failed to fetch users');
+    if (isSignUp) {
+      const newUser = {
+        name: fullName,
+        email: email,
+        password: password,
+      };
+      await postResponse(newUser);
+    } else {
+      try {
+        const users = await fetchUsers();
+        const user = users.find((user) => user.email === email && user.password === password);
+        
+        if (!user) {
+          alert('Invalid credentials. Please try again.');
+          return;
+        }
+        
+        setUserId(user.id);
+        setIsLoggedIn(true);
+        navigate('/landing');
+      } catch (error) {
+        console.error('Login error:', error);
+        alert('An error occurred while logging in. Please try again.');
       }
-
-      const users = await response.json();
-
-      const user = users.find((user) => user.email === email && user.password === password);
-
-      if (!user) {
-        throw new Error('Invalid credentials');
-      }
-      setUserId(user.id);
-      setIsLoggedIn(true);
-      navigate('/landing');
-    } catch (error) {
-      console.error(error);
-      alert('Login failed. Please check your credentials.');
     }
   };
 
@@ -38,6 +61,17 @@ const LoginPage = ({ setIsLoggedIn, setUserId }) => {
       <div className="auth-container">
         <h2>{isSignUp ? 'Sign Up' : 'Login'}</h2>
         <form onSubmit={handleSubmit}>
+          {isSignUp && (
+            <div>
+              <label>Full Name:</label>
+              <input
+                type="text"
+                value={fullName}
+                onChange={(e) => setFullName(e.target.value)}
+                required
+              />
+            </div>
+          )}
           <div>
             <label>Email:</label>
             <input

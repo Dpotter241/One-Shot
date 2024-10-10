@@ -1,15 +1,32 @@
 .theme-container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    height: 100vh;
+    justify-content: center;
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Full height of the viewport */
     padding-top: 20px;
-  }
+}
+
+/* New container style for the content box */
+.content-box {
+    background-color: white; /* White background for the box */
+    color: black; /* Black text color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 90%; /* Width can be adjusted as needed */
+    max-width: 600px; /* Maximum width for larger screens */
+}
 
 h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    color: black; /* Change to black for consistency */
+    text-align: center; /* Center text */
+    border: 2px solid black; /* Black border */
+    padding: 10px; /* Padding around the text */
+    border-radius: 8px; /* Rounded corners for the border */
+    background-color: rgba(0, 0, 0, 0.6); /* Optional: dark background for better contrast */
 }
 
 #characterForm {
@@ -21,6 +38,7 @@ h1 {
 label {
     margin-bottom: 5px;
     font-weight: bold;
+    color: black; /* Change label color to black */
 }
 
 select {
@@ -58,22 +76,22 @@ button:hover {
     z-index: 1000;
     width: 600px;
     max-width: 90%;
-  }
+}
 
-  .modal-content {
+.modal-content {
     display: flex;
     flex-direction: column;
     gap: 10px;
-  }
-  
-  .close {
+}
+
+.close {
     position: absolute;
     top: 10px;
     right: 10px;
     cursor: pointer;
-  }
-  
-  .modal-backdrop {
+}
+
+.modal-backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -81,5 +99,4 @@ button:hover {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 999;
-  }
-  
+}
