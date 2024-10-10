@@ -1,18 +1,18 @@
 .theme-container {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
-    height: 100vh; /* Full height of the viewport */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     padding-top: 20px;
 }
 
 h1 {
     font-size: 2.5rem; 
     margin-bottom: 20px; 
-    color: white; /* White text color */
-    text-align: center; /* Center text */
-    border: 2px solid black; /* Black border */
+    color: white;
+    text-align: center;
+    border: 2px solid black;
     padding: 10px; /* Padding around the text */
     border-radius: 8px; /* Rounded corners for the border */
     background-color: rgba(0, 0, 0, 0.6); /* Optional: dark background for better contrast */

@@ -30,6 +30,150 @@
       "email": "Dustin@gmail.com",
       "password": "testewrfasdf",
       "id": 5
+    },
+    {
+      "name": "Dustin Potter",
+      "email": "Dustin@gmail.com",
+      "password": "testewrfasdf",
+      "id": 6
+    },
+    {
+      "name": "Dustin Potter",
+      "email": "Dustin@gmail.com",
+      "password": "testewrfasdf",
+      "id": 7
+    },
+    {
+      "name": "Dustin Potter",
+      "email": "Dustin@gmail.com",
+      "password": "testewrfasdf",
+      "id": 8
+    },
+    {
+      "name": "dave",
+      "email": "d@b.com",
+      "password": "1234",
+      "id": 9
+    },
+    {
+      "name": "dave",
+      "email": "d@b.com",
+      "password": "1234",
+      "id": 10
+    },
+    {
+      "name": "dave",
+      "email": "d@b.com",
+      "password": "1234",
+      "id": 11
+    },
+    {
+      "name": "dave",
+      "email": "d@b.com",
+      "password": "1234",
+      "id": 12
+    },
+    {
+      "name": "dave",
+      "email": "d@b.com",
+      "password": "1234",
+      "id": 13
+    },
+    {
+      "name": "dave",
+      "email": "d@b.com",
+      "password": "1234",
+      "id": 14
+    },
+    {
+      "name": "dave",
+      "email": "d@b.com",
+      "password": "1234",
+      "id": 15
+    },
+    {
+      "name": "dave",
+      "email": "d@b.com",
+      "password": "1234",
+      "id": 16
+    },
+    {
+      "name": "dave",
+      "email": "d@b.com",
+      "password": "1234",
+      "id": 17
+    },
+    {
+      "name": "dave",
+      "email": "d@b.com",
+      "password": "1234",
+      "id": 18
+    },
+    {
+      "name": "dave",
+      "email": "d@b.com",
+      "password": "1234",
+      "id": 19
+    },
+    {
+      "name": "dave",
+      "email": "d@b.com",
+      "password": "1234",
+      "id": 20
+    },
+    {
+      "name": "dave",
+      "email": "d@b.com",
+      "password": "1234",
+      "id": 21
+    },
+    {
+      "name": "dave",
+      "email": "d@b.com",
+      "password": "1234",
+      "id": 22
+    },
+    {
+      "name": "dave",
+      "email": "d@b.com",
+      "password": "1234",
+      "id": 23
+    },
+    {
+      "name": "dave",
+      "email": "d@b.com",
+      "password": "1234",
+      "id": 24
+    },
+    {
+      "name": "dave",
+      "email": "d@b.com",
+      "password": "1234",
+      "id": 25
+    },
+    {
+      "name": "dave",
+      "email": "d@b.com",
+      "password": "1234",
+      "id": 26
+    },
+    {
+      "name": "dave",
+      "email": "d@b.com",
+      "password": "1234",
+      "id": 27
+    },
+    {
+      "name": "dave",
+      "email": "d@b.com",
+      "password": "1234",
+      "id": 28
+    },
+    {
+      "name": "dave",
+      "email": "d@b.com",
+      "password": "1234",
+      "id": 29
     }
   ],
   "time": [
@@ -86,6 +230,11 @@
     {
       "time": "Test",
       "id": 11
+    },
+    {
+      "time": "Stone Age",
+      "userId": 9,
+      "id": 12
     }
   ],
   "genre": [
@@ -143,6 +292,11 @@
       "id": 11,
       "genre": "test",
       "userId": 1
+    },
+    {
+      "genre": "Detective Noir",
+      "userId": 9,
+      "id": 12
     }
   ],
   "subgenre": [
@@ -200,6 +354,11 @@
       "id": 11,
       "subGenre": "test",
       "userId": 1
+    },
+    {
+      "subGenre": "thriller",
+      "userId": 9,
+      "id": 12
     }
   ],
   "characters": [
@@ -262,6 +421,12 @@
       "charactername": "Viraeth Emberheart",
       "characterdescription": "A fire-wielding tiefling warlock with a devilish grin and a dark pact with an ancient being",
       "userId": 5
+    },
+    {
+      "charactername": "Denizen",
+      "characterdescription": "He Rulez!",
+      "userId": 9,
+      "id": 11
     }
   ],
   "plots": [
@@ -314,6 +479,11 @@
       "id": 10,
       "plot": "The stars are aligning for the first time in a millennium, and a long-lost prophecy foretells a world-changing event. The players must decide whether to embrace or prevent the prophecy from coming true.",
       "userId": 5
+    },
+    {
+      "id": 1728588372327,
+      "plot": "Boy meets girl.",
+      "userId": 9
     }
   ]
 }
