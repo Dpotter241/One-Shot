@@ -3,7 +3,6 @@ import NavBar from '../Website/NavBar';
 import './Theme.css';
 
 const Theme = ({ userId }) => {
-  
   const [time, setTime] = useState('');
   const [genre, setGenre] = useState('');
   const [subGenre, setSubGenre] = useState('');
@@ -18,7 +17,7 @@ const Theme = ({ userId }) => {
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({ time, userId }),
+          body: JSON.stringify({ time, userId }), // Include userId
         });
 
         if (!response.ok) {
@@ -37,7 +36,7 @@ const Theme = ({ userId }) => {
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({ genre, userId }),
+          body: JSON.stringify({ genre, userId }), // Include userId
         });
 
         if (!response.ok) {
@@ -68,9 +67,7 @@ const Theme = ({ userId }) => {
       }
     };
 
-    await sendTime();
-    await sendGenre();
-    await sendSubGenre();
+    await Promise.all([sendTime(), sendGenre(), sendSubGenre()]);
 
     setTime('');
     setGenre('');
@@ -85,7 +82,7 @@ const Theme = ({ userId }) => {
       <h2>Add a New Theme</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="time">Time:</label>
+          <label htmlFor="time">Time Period:</label>
           <input
             type="text"
             id="time"

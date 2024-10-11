@@ -1,47 +1,47 @@
 .theme-container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Align items at the top */
-    align-items: center; /* Center horizontally */
-    height: auto; /* Allow height to adjust based on content */
-    padding-top: 20px; /* Optional: maintain some space at the top */
+    justify-content: flex-start; 
+    align-items: center; 
+    height: auto; 
+    padding-top: 20px; 
 }
 
 h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: white; /* White text color */
-    text-align: center; /* Center text */
-    border: 2px solid black; /* Black border */
-    padding: 10px; /* Padding around the text */
-    border-radius: 8px; /* Rounded corners for the border */
-    background-color: rgba(0, 0, 0, 0.6); /* Optional: dark background for better contrast */
+    color: black; 
+    text-align: center;
+    padding: 10px; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 8px; 
 }
 
 #characterForm {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 90%; 
+    max-width: 300px; 
 }
 
 label {
     margin-bottom: 5px;
     font-weight: bold;
-    color: white; /* Optional: Change label color to white */
+    color: black; 
 }
 
 select {
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
     font-size: 1rem;
 }
 
 button {
     padding: 10px;
-    background-color: #007bff;
-    color: white;
+    background-color: #007bff; 
+    color: white; 
     border: none;
     border-radius: 4px;
     font-size: 1rem;
@@ -50,7 +50,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; 
 }
 
 .modal {
@@ -58,26 +58,26 @@ button:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
-    border-radius: 10px;
+    background-color: white; 
     padding: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
     z-index: 1000;
-    width: 600px;
-    max-width: 90%;
+    width: 90%; 
+    max-width: 600px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
 }
 
 .modal-content {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 10px; 
 }
 
 .close {
     position: absolute;
     top: 10px;
     right: 10px;
-    cursor: pointer;
+    cursor: pointer; 
 }
 
 .modal-backdrop {
@@ -86,6 +86,20 @@ button:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 999; 
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem; 
+    }
+
+    .modal {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    #characterForm {
+        max-width: 90%; /* Increase width for smaller screens */
+    }
 }

@@ -5,10 +5,9 @@
 }
 
 body {
-  height: 100%;
   font-family: Arial, sans-serif;
-  background: url('https://wallpapers.com/images/hd/lord-of-the-rings-wallpaper-t1a7bjegd66zqs8i.jpg') no-repeat center center fixed;
-  background-size: cover; 
+  background-color: white;
+  color: black;
 }
 
 .app-container {
@@ -18,25 +17,41 @@ body {
   justify-content: flex-start;
   min-height: 100vh;
   width: 100%;
-  margin: 0 auto;
-  background-color: transparent;
+  padding: 20px;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #f0f0f0;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a,
+.navbar button {
+  text-decoration: none;
+  color: black;
+  padding: 10px 15px;
 }
 
 .content-box {
   background-color: white;
   color: black;
-  border-radius: 8px;
+  border-radius: 0;
   padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: none;
   width: 90%;
   max-width: 800px;
+  text-align: center;
 }
 
 .auth-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   width: 100%;
   padding: 20px;
 }
@@ -44,18 +59,16 @@ body {
 .auth-container form {
   background-color: white;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  border-radius: 0;
+  box-shadow: none;
+  width: 90%;
+  max-width: 300px;
 }
 
 h1 {
-  color: white; 
+  color: black;
   text-align: center; 
-  border: 2px solid black;
   padding: 10px;
-  border-radius: 8px; 
-  background-color: rgba(0, 0, 0, 0.6); 
 }
 
 .page-content {
@@ -64,4 +77,29 @@ h1 {
   flex-direction: column;
   align-items: center;
   padding: 20px;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a,
+  .navbar button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .content-box {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .page-content {
+    padding: 10px;
+  }
 }
