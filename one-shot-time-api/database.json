@@ -10,7 +10,6 @@
       "name": "test",
       "email": "test@test.com",
       "password": "test",
-      "userId": 8,
       "id": 2
     },
     {
@@ -26,10 +25,34 @@
       "id": 4
     },
     {
+      "name": "Dustin Potter",
+      "email": "Dustin@gmail.com",
+      "password": "testewrfasdf",
+      "id": 5
+    },
+    {
+      "name": "Dustin Potter",
+      "email": "Dustin@gmail.com",
+      "password": "testewrfasdf",
+      "id": 6
+    },
+    {
+      "name": "Dustin Potter",
+      "email": "Dustin@gmail.com",
+      "password": "testewrfasdf",
+      "id": 7
+    },
+    {
+      "name": "Dustin Potter",
+      "email": "Dustin@gmail.com",
+      "password": "testewrfasdf",
+      "id": 8
+    },
+    {
       "name": "dave",
       "email": "d@b.com",
       "password": "1234",
-      "id": 5
+      "id": 9
     }
   ],
   "time": [
@@ -82,10 +105,6 @@
       "id": 10,
       "time": "Dark Ages",
       "userId": 5
-    },
-    {
-      "time": "Test",
-      "id": 11
     },
     {
       "time": "Stone Age",
@@ -142,11 +161,16 @@
     {
       "id": 10,
       "genre": "Romance",
-      "userId": 3
+      "userId": 5
+    },
+    {
+      "id": 11,
+      "genre": "test",
+      "userId": 1
     },
     {
       "genre": "Detective Noir",
-      "userId": 5,
+      "userId": 9,
       "id": 12
     }
   ],
@@ -202,8 +226,13 @@
       "userId": 5
     },
     {
+      "id": 11,
+      "subGenre": "test",
+      "userId": 1
+    },
+    {
       "subGenre": "thriller",
-      "userId": 3,
+      "userId": 9,
       "id": 12
     }
   ],
@@ -267,6 +296,12 @@
       "charactername": "Viraeth Emberheart",
       "characterdescription": "A fire-wielding tiefling warlock with a devilish grin and a dark pact with an ancient being",
       "userId": 5
+    },
+    {
+      "charactername": "Denizen",
+      "characterdescription": "He Rulez!",
+      "userId": 9,
+      "id": 11
     }
   ],
   "plots": [

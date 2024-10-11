@@ -28,25 +28,36 @@ const LoginPage = ({ setIsLoggedIn, setUserId }) => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-
+  
     if (isSignUp) {
       const newUser = {
         name: fullName,
         email: email,
         password: password,
       };
-      await postResponse(newUser);
+  
+      try {
+        const response = await postResponse(newUser);
+        if (!response.ok) {
+          throw new Error('Failed to sign up.');
+        }
+
+        setIsLoggedIn(true);
+        navigate('/landing');
+      } catch (error) {
+        console.error('Sign up error:', error);
+        alert('An error occurred during sign-up. Please try again.');
+      }
     } else {
       try {
         const users = await fetchUsers();
         const user = users.find((user) => user.email === email && user.password === password);
-        
+  
         if (!user) {
           alert('Invalid credentials. Please try again.');
           return;
         }
-        
-        setUserId(user.id);
+  
         setIsLoggedIn(true);
         navigate('/landing');
       } catch (error) {
@@ -55,6 +66,7 @@ const LoginPage = ({ setIsLoggedIn, setUserId }) => {
       }
     }
   };
+  
 
   return (
     <div className="app-container">
