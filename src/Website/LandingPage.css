@@ -99,14 +99,14 @@ button:hover {
 
 @media (max-width: 600px) {
     h1 {
-        font-size: 2rem; /* Reduce heading size for smaller screens */
+        font-size: 2rem;
     }
 
     .content-box {
-        padding: 15px; /* Adjust padding for smaller screens */
+        padding: 15px;
     }
 
     #characterForm {
-        max-width: 90%; /* Increase width for smaller screens */
+        max-width: 90%;
     }
 }

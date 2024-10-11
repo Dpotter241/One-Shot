@@ -6,7 +6,7 @@ const MySubmissions = ({ userId }) => {
   const [submissions, setSubmissions] = useState({
     times: [],
     genres: [],
-    subgenres: [], // Ensure this matches the structure
+    subgenres: [],
     characters: [],
     plots: [],
   });
@@ -23,7 +23,7 @@ const MySubmissions = ({ userId }) => {
       const responses = await Promise.all([
         fetch(`http://localhost:8088/time?userId=${userId}`),
         fetch(`http://localhost:8088/genre?userId=${userId}`),
-        fetch(`http://localhost:8088/subGenre?userId=${userId}`), // Correct fetch for subgenres
+        fetch(`http://localhost:8088/subGenre?userId=${userId}`),
         fetch(`http://localhost:8088/characters?userId=${userId}`),
         fetch(`http://localhost:8088/plots?userId=${userId}`),
       ]);
@@ -35,7 +35,7 @@ const MySubmissions = ({ userId }) => {
       setSubmissions({
         times,
         genres,
-        subgenres, // Ensure subgenres are correctly set
+        subgenres,
         characters,
         plots,
       });
@@ -130,7 +130,7 @@ const MySubmissions = ({ userId }) => {
               <div className="submission-category">
                 <h3>SubGenres Submitted:</h3>
                 <ul>
-                  {submissions.subgenres.map((subGenre) => ( // Use the correct key: subgenres
+                  {submissions.subgenres.map((subGenre) => (
                     <li key={subGenre.id}>{subGenre.subGenre}</li>
                   ))}
                 </ul>

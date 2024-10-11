@@ -17,7 +17,7 @@ const Theme = ({ userId }) => {
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({ time, userId }), // Include userId
+          body: JSON.stringify({ time, userId }),
         });
 
         if (!response.ok) {
@@ -36,7 +36,7 @@ const Theme = ({ userId }) => {
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({ genre, userId }), // Include userId
+          body: JSON.stringify({ genre, userId }),
         });
 
         if (!response.ok) {

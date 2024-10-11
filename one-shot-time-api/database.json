@@ -83,6 +83,12 @@
       "email": "Test@test.com",
       "password": "test",
       "id": 14
+    },
+    {
+      "name": "Dustin Potter",
+      "email": "dustin@gmail.com",
+      "password": "testpassword1",
+      "id": 15
     }
   ],
   "time": [
@@ -140,41 +146,6 @@
       "time": "Stone Age",
       "userId": 9,
       "id": 12
-    },
-    {
-      "time": "Modern ",
-      "userId": null,
-      "id": 13
-    },
-    {
-      "time": "test",
-      "userId": null,
-      "id": 14
-    },
-    {
-      "time": "The long long ago",
-      "userId": null,
-      "id": 15
-    },
-    {
-      "time": "Test",
-      "userId": 12,
-      "id": 16
-    },
-    {
-      "time": "test",
-      "userId": 12,
-      "id": 17
-    },
-    {
-      "time": "Tomorrow",
-      "userId": 13,
-      "id": 18
-    },
-    {
-      "time": "test",
-      "userId": 14,
-      "id": 19
     }
   ],
   "genre": [
@@ -237,41 +208,6 @@
       "genre": "Detective Noir",
       "userId": 9,
       "id": 12
-    },
-    {
-      "genre": "Sci-fi",
-      "userId": null,
-      "id": 13
-    },
-    {
-      "genre": "test",
-      "userId": null,
-      "id": 14
-    },
-    {
-      "genre": "Thriller",
-      "userId": null,
-      "id": 15
-    },
-    {
-      "genre": "test",
-      "userId": 12,
-      "id": 16
-    },
-    {
-      "genre": "test",
-      "userId": 12,
-      "id": 17
-    },
-    {
-      "genre": "Future",
-      "userId": 13,
-      "id": 18
-    },
-    {
-      "genre": "test",
-      "userId": 14,
-      "id": 19
     }
   ],
   "subgenre": [
@@ -324,51 +260,6 @@
       "id": 10,
       "subgenre": "Heroic",
       "userId": 5
-    },
-    {
-      "id": 11,
-      "subGenre": "test",
-      "userId": 1
-    },
-    {
-      "subGenre": "thriller",
-      "userId": 9,
-      "id": 12
-    },
-    {
-      "subGenre": "superhero",
-      "userId": null,
-      "id": 13
-    },
-    {
-      "subGenre": "test",
-      "userId": null,
-      "id": 14
-    },
-    {
-      "subGenre": "Outerspace",
-      "userId": null,
-      "id": 15
-    },
-    {
-      "subGenre": "test",
-      "userId": 12,
-      "id": 16
-    },
-    {
-      "subGenre": "test",
-      "userId": 12,
-      "id": 17
-    },
-    {
-      "subGenre": "Futuristic",
-      "userId": 13,
-      "id": 18
-    },
-    {
-      "subGenre": "test",
-      "userId": 14,
-      "id": 19
     }
   ],
   "characters": [
@@ -431,36 +322,6 @@
       "charactername": "Viraeth Emberheart",
       "characterdescription": "A fire-wielding tiefling warlock with a devilish grin and a dark pact with an ancient being",
       "userId": 5
-    },
-    {
-      "charactername": "Denizen",
-      "characterdescription": "He Rulez!",
-      "userId": 9,
-      "id": 11
-    },
-    {
-      "charactername": "Nu' Au Shaperi",
-      "characterdescription": "A scholar with a arcane tome",
-      "userId": null,
-      "id": 12
-    },
-    {
-      "charactername": "test",
-      "characterdescription": "test test",
-      "userId": 12,
-      "id": 13
-    },
-    {
-      "charactername": "David jacob",
-      "characterdescription": "A cool dood",
-      "userId": 13,
-      "id": 14
-    },
-    {
-      "charactername": "test",
-      "characterdescription": "test",
-      "userId": 14,
-      "id": 15
     }
   ],
   "plots": [
@@ -513,19 +374,6 @@
       "id": 10,
       "plot": "The stars are aligning for the first time in a millennium, and a long-lost prophecy foretells a world-changing event. The players must decide whether to embrace or prevent the prophecy from coming true.",
       "userId": 5
-    },
-    {
-      "plot": "Dragons have been attacking a local village, find out who is behind the attacks!",
-      "userId": null,
-      "id": 1728671923480
-    },
-    {
-      "plot": "rtqwe  asfdasdf",
-      "id": 1728673086275
-    },
-    {
-      "plot": "test test 123",
-      "id": 1728674021957
     }
   ]
 }

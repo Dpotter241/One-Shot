@@ -62,6 +62,6 @@ nav {
 @media (max-width: 600px) {
     .navbar li {
         margin-right: 10px;
-        margin-bottom: 5px; /* Add some spacing below each item */
+        margin-bottom: 5px;
     }
 }

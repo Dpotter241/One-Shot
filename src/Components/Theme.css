@@ -96,10 +96,10 @@ button:hover {
     }
 
     .modal {
-        padding: 20px; /* Adjust padding for smaller screens */
+        padding: 20px; 
     }
 
     #characterForm {
-        max-width: 90%; /* Increase width for smaller screens */
+        max-width: 90%;
     }
 }
