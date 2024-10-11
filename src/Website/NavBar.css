@@ -63,3 +63,18 @@ nav:after {
     bottom: -10px;
     top: auto;
 }
+
+.sign-out-btn {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0;
+    text-decoration: underline;
+  }
+  
+  .sign-out-btn:hover {
+    color: #0056b3;
+  }
+  

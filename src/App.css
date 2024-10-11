@@ -49,14 +49,13 @@ body {
   width: 300px;
 }
 
-/* Center the text for h1 elements */
 h1 {
-  color: white; /* White text color */
-  text-align: center; /* Center text */
-  border: 2px solid black; /* Black border */
-  padding: 10px; /* Padding around the text */
-  border-radius: 8px; /* Rounded corners for the border */
-  background-color: rgba(0, 0, 0, 0.6); /* Optional: dark background for better contrast */
+  color: white; 
+  text-align: center; 
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 8px; 
+  background-color: rgba(0, 0, 0, 0.6); 
 }
 
 .page-content {

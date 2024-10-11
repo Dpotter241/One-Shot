@@ -1,8 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
+  const navigate = useNavigate();
+
+  const handleSignOut = () => {
+
+    localStorage.removeItem('authToken');
+
+    navigate('/login');
+  };
+
   return (
     <nav>
       <ul className="navbar">
@@ -20,6 +29,11 @@ const Navbar = () => {
         </li>
         <li>
           <Link to="/mysubmissions">My Submissions</Link>
+        </li>
+        <li>
+          <button className="sign-out-btn" onClick={handleSignOut}>
+            Sign Out
+          </button>
         </li>
       </ul>
     </nav>

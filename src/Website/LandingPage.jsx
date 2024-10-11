@@ -72,21 +72,21 @@ const LandingPage = () => {
       <h1>It's Adventure Time!</h1>
 
       <form id="characterForm" onSubmit={handleSubmit}>
-        <label htmlFor="timeSelect">Choose Time:</label>
+        <label htmlFor="timeSelect">Choose Time period:</label>
         <select id="timeSelect">
           {timeOptions.map(option => (
             <option key={option.id} value={option.time}>{option.time}</option>
           ))}
         </select>
 
-        <label htmlFor="genreSelect">Choose Genre:</label>
+        <label htmlFor="genreSelect">Choose a Genre:</label>
         <select id="genreSelect">
           {genreOptions.map(option => (
             <option key={option.id} value={option.genre}>{option.genre}</option>
           ))}
         </select>
 
-        <label htmlFor="subgenreSelect">Choose Subgenre:</label>
+        <label htmlFor="subgenreSelect">Choose a Subgenre:</label>
         <select id="subgenreSelect">
           {subgenreOptions.map(option => (
             <option key={option.id} value={option.subgenre}>{option.subgenre}</option>
