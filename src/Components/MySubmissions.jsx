@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import NavBar from '../Website/NavBar'; 
 import './MySubmissions.css';
 
@@ -11,8 +10,6 @@ const MySubmissions = ({ userId }) => {
     characters: [],
     plots: [],
   });
-  const [selectedPlot, setSelectedPlot] = useState(null);
-  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchSubmissions = async () => {
@@ -42,36 +39,11 @@ const MySubmissions = ({ userId }) => {
     };
 
     fetchSubmissions();
-  }, [userId]);
-
-  const handleEditPlot = () => {
-    if (selectedPlot) {
-      navigate(`/plots/${selectedPlot.id}/edit`);
-    }
-  };
-
-  const handleDeletePlot = async () => {
-    if (selectedPlot) {
-      try {
-        await fetch(`http://localhost:8088/plots/${selectedPlot.id}`, {
-          method: 'DELETE',
-        });
-
-        setSubmissions((prevSubmissions) => ({
-          ...prevSubmissions,
-          plots: prevSubmissions.plots.filter((plot) => plot.id !== selectedPlot.id),
-        }));
-
-        setSelectedPlot(null);
-      } catch (error) {
-        console.error('Error deleting plot:', error);
-      }
-    }
-  };
+  }, [userId]); 
 
   return (
     <div className="submissions-container">
-      <NavBar />
+      <NavBar /> 
       <h2>My Submissions</h2>
 
       <div className="submission-category">
@@ -114,31 +86,11 @@ const MySubmissions = ({ userId }) => {
 
       <div className="submission-category">
         <h3>Plots Submitted:</h3>
-
-        {/* Dropdown for selecting a plot */}
-        <select
-          value={selectedPlot ? selectedPlot.id : ''}
-          onChange={(e) => {
-            const selectedId = parseInt(e.target.value);
-            const plot = submissions.plots.find((plot) => plot.id === selectedId);
-            setSelectedPlot(plot);
-          }}
-        >
-          <option value="" disabled>Select a plot</option>
+        <ul>
           {submissions.plots.map((plot) => (
-            <option key={plot.id} value={plot.id}>
-              {plot.plot}
-            </option>
+            <li key={plot.id}>{plot.plot}</li>
           ))}
-        </select>
-
-        {/* Display edit and delete buttons if a plot is selected */}
-        {selectedPlot && (
-          <div className="plot-actions">
-            <button onClick={handleEditPlot}>Edit</button>
-            <button onClick={handleDeletePlot}>Delete</button>
-          </div>
-        )}
+        </ul>
       </div>
     </div>
   );
