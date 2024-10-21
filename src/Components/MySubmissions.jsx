@@ -23,7 +23,7 @@ const MySubmissions = ({ userId }) => {
       const responses = await Promise.all([
         fetch(`http://localhost:8088/time?userId=${userId}`),
         fetch(`http://localhost:8088/genre?userId=${userId}`),
-        fetch(`http://localhost:8088/subGenre?userId=${userId}`),
+        fetch(`http://localhost:8088/subgenre?userId=${userId}`),
         fetch(`http://localhost:8088/characters?userId=${userId}`),
         fetch(`http://localhost:8088/plots?userId=${userId}`),
       ]);
@@ -130,8 +130,8 @@ const MySubmissions = ({ userId }) => {
               <div className="submission-category">
                 <h3>SubGenres Submitted:</h3>
                 <ul>
-                  {submissions.subgenres.map((subGenre) => (
-                    <li key={subGenre.id}>{subGenre.subGenre}</li>
+                  {submissions.subgenres.map((subgenre) => (
+                    <li key={subgenre.id}>{subgenre.subgenre}</li>
                   ))}
                 </ul>
               </div>
