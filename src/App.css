@@ -6,8 +6,13 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: white;
+  background: url("https://goblincoach.com/wp-content/uploads/2023/01/title.jpg") no-repeat center center fixed;
+  background-size: cover;
   color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .app-container {
@@ -15,9 +20,13 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  min-height: 100vh;
-  width: 100%;
+  width: 90%;
+  max-width: 800px;
   padding: 20px;
+  background-color: white;
+  border: 20px solid transparent; /* Creates the visible border */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-clip: padding-box; /* Ensures the white background doesn’t overlap the border */
 }
 
 .navbar {
@@ -39,12 +48,11 @@ body {
 .content-box {
   background-color: white;
   color: black;
-  border-radius: 0;
   padding: 20px;
-  box-shadow: none;
-  width: 90%;
+  width: 100%;
   max-width: 800px;
   text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .auth-container {

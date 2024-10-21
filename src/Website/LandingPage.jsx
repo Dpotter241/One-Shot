@@ -35,6 +35,29 @@ const LandingPage = () => {
     fetchData();
   }, []);
 
+  const getRandomOption = (options) => {
+    return options[Math.floor(Math.random() * options.length)];
+  };
+
+  const handleRandomAdventure = () => {
+    const selectedTime = getRandomOption(timeOptions);
+    const selectedGenre = getRandomOption(genreOptions);
+    const selectedSubgenre = getRandomOption(subgenreOptions);
+    const selectedCharacter = getRandomOption(characterOptions);
+    const selectedPlot = getRandomOption(plotOptions);
+
+    setAdventureDetails({
+      time: selectedTime.time,
+      genre: selectedGenre.genre,
+      subgenre: selectedSubgenre.subgenre,
+      character: selectedCharacter.charactername,
+      plot: selectedPlot.plot,
+      characterDescription: selectedCharacter.characterdescription,
+    });
+
+    setShowModal(true);
+  };
+
   const handleSubmit = (event) => {
     event.preventDefault();
 
@@ -107,7 +130,8 @@ const LandingPage = () => {
           ))}
         </select>
 
-        <button type="submit">Create Adventure</button>
+        <button type="submit">Create Your Custom Adventure</button>
+        <button type="button" onClick={handleRandomAdventure}>Roll The Dice!</button>
       </form>
 
       {showModal && (

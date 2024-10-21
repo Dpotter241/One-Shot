@@ -75,6 +75,7 @@ const LoginPage = ({ setIsLoggedIn, setUserId }) => {
   return (
     <div className="app-container">
       <div className="auth-container">
+      <h1>Ready for an adventure?</h1>
         <h2>{isSignUp ? 'Sign Up' : 'Login'}</h2>
         <form onSubmit={handleSubmit}>
           {isSignUp && (

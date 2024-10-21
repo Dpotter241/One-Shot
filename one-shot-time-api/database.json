@@ -198,16 +198,6 @@
       "id": 10,
       "genre": "Romance",
       "userId": 5
-    },
-    {
-      "id": 11,
-      "genre": "test",
-      "userId": 1
-    },
-    {
-      "genre": "Detective Noir",
-      "userId": 9,
-      "id": 12
     }
   ],
   "subgenre": [
@@ -255,11 +245,6 @@
       "id": 9,
       "subgenre": "Stealth",
       "userId": 4
-    },
-    {
-      "id": 10,
-      "subgenre": "Heroic",
-      "userId": 5
     }
   ],
   "characters": [
